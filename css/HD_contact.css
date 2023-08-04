@@ -1,0 +1,252 @@
+@import url(HD_common.css);
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&family=Montserrat&family=Pacifico&display=swap");
+
+/* ここからぷちオブジェクトアニメ */
+
+.open {
+  opacity: 0;
+  animation-name: open;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ここまでぷちオブジェクトアニメ */
+
+.maincon {
+  display: flex;
+  max-width: 1230px;
+  height: 730px;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: 1.5px solid #ffffff;
+  background-color: #ffffff00;
+  -webkit-text-fill-color: #ffffff;
+  border-radius: 5px 5px 5px 5px;
+}
+
+textarea {
+  border: 1.5px solid #ffffff;
+  background-color: #ffffff00;
+  -webkit-text-fill-color: #ffffff;
+  border-radius: 5px 5px 5px 5px;
+}
+
+legend span {
+  font-size: 14px;
+  margin-top: 0.5px;
+}
+
+.contactm {
+  color: #ffae00;
+  pointer-events: none;
+}
+
+.maincontents {
+  flex-direction: column;
+}
+
+.mcontents {
+  max-width: 1000px;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -90px;
+}
+
+.mailsenter {
+  max-width: 1200px;
+  height: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 195px;
+  gap: 30px;
+}
+
+.tousai {
+  width: 800px;
+  font-size: 16px;
+  display: block;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "palt";
+  cursor: default;
+  margin-top: -55px;
+}
+
+/* 幅比率:auto */
+.person {
+  display: flex;
+  max-width: 800px;
+  margin-top: -3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 28em;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 13.5px;
+  outline: none;
+  flex-basis: 100%;
+}
+
+.textrange {
+  display: flex;
+  max-width: 600px;
+  height: auto;
+}
+
+legend {
+  font-size: 17px;
+  font-weight: 100;
+  margin-bottom: 4px;
+  cursor: default;
+}
+
+.otoi {
+  font-size: 13.5px;
+  cursor: default;
+}
+
+textarea {
+  width: 28em;
+  height: 13em;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  resize: none;
+  justify-content: center;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
+}
+
+.chuhi {
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  cursor: default;
+}
+
+.input {
+  background: none;
+  border: 1.5px solid #ffffff;
+}
+
+.downside {
+  max-width: 950px;
+  height: 300px;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+  z-index: -100;
+}
+
+.goto button {
+  height: 30px;
+  font-size: 17px;
+  color: #ffffff;
+  padding: 3px 60px;
+  border-radius: 30px; /* ←角丸の設定 */
+  cursor: pointer;
+  border: 1.5px solid #ffffff;
+  background: transparent;
+}
+
+.goto button:hover {
+  color: #ffae00;
+}
+
+h5 {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  cursor: default;
+}
+
+.hogo {
+  padding-top: 15px;
+  text-align: left;
+}
+
+.hogo p {
+  padding-left: 80px;
+  padding-right: 80px;
+  font-feature-settings: "palt";
+  cursor: default;
+}
+
+.br::before {
+  content: "\A";
+  white-space: pre;
+}
+
+@media (max-width: 1061px) {
+  .mcontents {
+    margin-bottom: 40px;
+  }
+
+  .mailsenter {
+    height: 230px;
+    margin-top: -65px;
+    width: 400px;
+    text-align: center;
+  }
+
+  .tousai {
+    width: 360px;
+    font-size: 14px;
+    margin-top: -65px;
+  }
+
+  .textrange {
+    margin-top: -40px;
+  }
+
+  .downside {
+    display: flex;
+    justify-content: end;
+    margin-top: 250px;
+  }
+
+  .hogo {
+    width: 520px;
+  }
+
+  .person {
+    padding-bottom: 15px;
+  }
+
+  .br::before {
+    content: none;
+  }
+}

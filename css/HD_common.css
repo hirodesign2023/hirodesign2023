@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&family=Montserrat&family=Pacifico&display=swap");
+
+body {
+  /*テキストのデフォルトの書式を設定*/
+  color: #ffffff;
+  line-height: 1.3; /* line-heightは行間（文字の大きさ+上下の余白）です。 */
+  font-size: 13px;
+  font-family: "Montserrat", "Yu Gothic";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ーーーーーーーーーここから背景動画ーーーーーーーーー */
+
+/* ビデオ系 */
+.move {
+  width: 100%;
+  height: 1100px;
+  position: absolute;
+  overflow: hidden;
+  z-index: -2000;
+}
+
+/* 全体を囲う要素 */
+.move-wrap {
+  position: absolute;
+  /* 背景画像の高さ */
+  height: 1100px;
+  z-index: -1990;
+}
+
+video {
+  display: block;
+  width: 100%;
+  /* 背景画像の高さ */
+  height: 1100px;
+  /* 高さを維持したまま全体を表示させる */
+  position: absolute;
+  object-fit: cover;
+  z-index: -1980;
+}
+
+.orverlay {
+  display: block;
+  width: 100%;
+  /* 背景画像の高さ */
+  height: 1100px;
+  object-fit: cover;
+  position: absolute;
+  /* 薄いレイヤーの色 */
+  background-color: rgba(3, 81, 107, 0.377);
+  /* videoの上に乗せる */
+  z-index: -1900;
+}
+
+/* ーーーーーーーーーここまで背景動画ーーーーーーーーー */
+
+/*  ーーーーーーーここからオープニングフェードイン効果 ーーーーーーー */
+
+body {
+  animation: body 2.5s forwards; /* ←アニメ時間 */
+}
+@keyframes body {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*  ーーーーーーーここまでオープニングフェードイン効果 ーーーーーーー */
+
+/* ーーーーここからヘッダーエリアーーーー */
+
+header {
+  height: 63px;
+}
+
+.sen1 {
+  height: 63px;
+  border-bottom: 3.5px solid #ffffff;
+}
+
+/* ーーーーここまでヘッダーエリアーーーー */
+
+.containmer {
+  display: flex;
+  flex-direction: row;
+  max-width: 1520px;
+  min-width: 768px;
+  margin-top: -63px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sen2 {
+  height: 1100px;
+  border-left: 3.5px solid #ffffff;
+  border-right: 3.5px solid #ffffff;
+}
+
+/* ーーーーここからレフトサイドーーーー */
+
+.l-side {
+  max-width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 230px;
+  height: 883px;
+}
+
+.sen3 {
+  max-width: 230px;
+  border-right: 3.5px solid #ffffff;
+}
+
+h1 {
+  height: 63px;
+  font-size: 20px;
+  padding-top: 18px;
+}
+
+.logo span {
+  color: #ffbc05;
+}
+
+.logo:hover {
+  color: #ffbc05;
+  transition: 0.5s;
+}
+
+.sen4 {
+  width: 230px;
+  height: 90px;
+  border-bottom: 1.5px solid #ffffff;
+}
+
+h2 {
+  height: 90px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 32px;
+  pointer-events: none;
+}
+
+.sen5 {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 620px;
+  border-left: 1.5px solid #ffffff;
+  border-right: 1.5px solid #ffffff;
+}
+
+h4 {
+  pointer-events: none;
+}
+
+/* ここからアイコンボタン */
+
+nav ul {
+  width: 170px;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  padding-right: 45px;
+}
+
+.guide img {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.web img {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.paper img {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.enter img {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.other img {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.link img {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.jump img:nth-of-type(1)  /* type(1)は通常画面の時の絵  (1)は1枚目という意味 */ {
+  opacity: 1;
+} /* opacity: 1は画面を表示させるという意味 */
+
+.jump img:nth-of-type(2) /* type(2)はホバー時画面の時の絵  (2)2枚目という意味 */ {
+  opacity: 0;
+} /* opacity: 0は画面を表示させないという意味 */
+
+.jump:hover img:nth-of-type(1)  /* ホバー時の1枚目という意味 */ {
+  opacity: 0;
+}
+
+.jump:hover img:nth-of-type(2) {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+/* ここまでアイコンボタン */
+
+.sen6 {
+  width: 230px;
+  height: 90px;
+  padding-top: 38px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-top: 1.5px solid #ffffff;
+}
+
+.text2 {
+  text-align: center;
+  font-feature-settings: "palt";
+  cursor: default;
+}
+
+h3 {
+  pointer-events: none;
+}
+
+/* ーーーーここまでレフトサイドーーーー */
+
+/* ーーーーここからライトサイドーーーー */
+
+.r-side {
+  width: 1290px;
+  height: 883px;
+}
+
+.smenu {
+  display: flex;
+  flex-direction: row;
+  max-width: 1290px;
+  height: 820px;
+  margin-top: 63px;
+}
+
+.sen7 {
+  width: 30px;
+  height: 820px;
+  border-right: 1.5px solid #ffffff;
+}
+
+.mainmenu {
+  flex: auto;
+  max-width: 1230px;
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hedmenu {
+  display: flex;
+  position: absolute;
+  white-space: nowrap; /* ←画面が狭くなっても文字の改行はしない */
+  font-size: 15px;
+  margin-top: -45px;
+  margin-left: -2px;
+}
+
+.hedmenu span {
+  font-size: 17px;
+  font-weight: 200;
+  padding-right: 2px;
+  color: #ffffff;
+}
+
+.hed {
+  padding-right: 20px;
+}
+
+.hed:hover {
+  color: #ffbc05;
+  transition: 0.5s;
+}
+
+h4 {
+  font-size: 20px;
+  padding-top: 17px;
+}
+
+.YK01 {
+  margin-top: -45px;
+}
+
+menu {
+  display: flex;
+  list-style: none;
+  justify-content: center; /*左右中央揃え*/
+}
+
+.Select {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding-top: 15px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-right: 15px;
+  z-index: 800;
+}
+
+.case1 img {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.case2 img {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.case3 img {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.case4 img {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.case5 img {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.Select img:nth-of-type(1)  /* type(1)は通常画面の時の絵  (1)は1枚目という意味 */ {
+  opacity: 1;
+} /* opacity: 1は画面を表示させるという意味 */
+
+.Select img:nth-of-type(2) /* type(2)はホバー時画面の時の絵  (2)2枚目という意味 */ {
+  opacity: 0;
+} /* opacity: 0は画面を表示させないという意味 */
+
+.Select:hover img:nth-of-type(1)  /* ホバー時の1枚目という意味 */ {
+  opacity: 0;
+}
+
+.Select:hover img:nth-of-type(2) {
+  opacity: 1;
+}
+
+.sen8 {
+  width: 30px;
+  height: 820px;
+  border-left: 1.5px solid #ffffff;
+}
+
+/* ーーーーーーここからフッターエリアーーーーーー */
+
+footer {
+  margin-top: -219px;
+}
+
+.sen9 {
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 3.5px solid #fffffffd;
+}
+
+.containmer2 {
+  display: flex;
+  max-width: 1520px;
+  min-width: 755px;
+  height: 200px;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  align-items: center;
+}
+
+.text3 {
+  max-width: 1460px;
+  flex: auto;
+  text-align: justify;
+  font-feature-settings: "palt";
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 8px;
+  cursor: default;
+}
+
+/* ーーーーーーここまでフッターエリアーーーーーー */
+
+/* レスポンシブ */
+@media (max-width: 1515px) {
+  .sen2 {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media (max-width: 1061px) {
+  .containmer {
+    max-width: 991px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .l-side {
+    width: 200px;
+  }
+
+  .sen3 {
+    width: 200px;
+  }
+
+  .sen4 {
+    width: 200px;
+  }
+
+  .sen5 {
+    width: 140px;
+  }
+
+  nav ul {
+    width: 140px;
+  }
+
+  .sen6 {
+    width: 200px;
+    padding: 30px 40px;
+  }
+
+  .sen7 {
+    border-right: none;
+  }
+
+  .sen8 {
+    border-left: none;
+  }
+
+  .title {
+    width: 300px;
+  }
+
+  .sp {
+    display: initial;
+  }
+
+  h3 {
+    margin-top: 10px;
+  }
+}
+
+.containmer2 {
+  padding: 30px 0px 30px 0px;
+}

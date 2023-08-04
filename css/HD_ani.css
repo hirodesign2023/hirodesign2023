@@ -1,0 +1,477 @@
+@import url(HD_common.css);
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&family=Montserrat&family=Pacifico&display=swap");
+
+/* メインタイトル透明化 */
+.title {
+  visibility: hidden;
+}
+
+/* コンテンツ名透明化 */
+h4 {
+  visibility: hidden;
+}
+
+.logo:hover {
+  cursor: default;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.maincon {
+  display: flex;
+  max-width: 1230px;
+  height: 730px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  cursor: default;
+}
+
+/* ーーーーーここから線アニメセクターーーーー */
+
+.senani {
+  margin-top: -1100px;
+  height: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -890;
+}
+
+.sen1::after {
+  content: "";
+  position: absolute;
+  padding-top: 59.5px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 100%;
+  transform: translateX(-100%);
+  border-bottom: 3.5px solid#ffffff;
+  animation: sen1 6s linear forwards;
+  animation-delay: 2s;
+  z-index: -880;
+}
+
+@keyframes sen1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.senbox {
+  display: flex;
+  max-width: 1520px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -870;
+}
+
+.sen2::after {
+  content: "";
+  width: 1520px;
+  position: absolute;
+  margin-left: -3px;
+  top: 100%;
+  transform: translateY(-100%);
+  border-left: 3.5px solid#ffffff;
+  border-right: 3.5px solid#ffffff;
+  animation: sen2 6s linear forwards;
+  animation-delay: 2s;
+  z-index: -950;
+}
+
+@keyframes sen2 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.minbox {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1520px;
+  height: 883px;
+  margin-top: 16px;
+  z-index: -870;
+}
+
+.sen3::after {
+  content: "";
+  position: absolute;
+  margin-left: 230px;
+  border-right: 3.5px solid#ffffff;
+  animation: sen3 6s linear forwards;
+  animation-delay: 2s;
+  z-index: -940;
+}
+
+@keyframes sen3 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 883px;
+  }
+}
+
+.sen4::after {
+  content: "";
+  margin-top: -1.5px;
+  margin-left: -115px;
+  position: absolute;
+  border-bottom: 1.5px solid #fdfdff;
+  animation: sen4 6s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes sen4 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 230px;
+  }
+}
+
+.sen5::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  margin-top: -1.5px;
+  margin-left: -1.5px;
+  border-left: 1.5px solid #ffffff;
+  border-right: 1.5px solid #fcfbff;
+  animation: sen5 6s linear forwards;
+  animation-delay: 2s;
+  z-index: -930;
+}
+
+@keyframes sen5 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 621px;
+  }
+}
+
+.sen6::after {
+  content: "";
+  position: absolute;
+  margin-top: -74px;
+  margin-left: -115px;
+  border-top: 1.5px solid #ffffff;
+  animation: sen6 6s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes sen6 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 230px;
+  }
+}
+
+.sen7::after {
+  content: "";
+  position: absolute;
+  margin-left: 29px;
+  border-right: 1.5px solid #ffffff;
+  animation: sen7 6s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes sen7 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 820px;
+  }
+}
+
+.sen8::after {
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  border-left: 1.5px solid #ffffff;
+  animation: sen8 6s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes sen8 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 820px;
+  }
+}
+
+.sen9::after {
+  content: "";
+  position: absolute;
+  margin-top: -200px;
+  left: 100%;
+  transform: translateX(-100%);
+  border-bottom: 3.5px solid#ffffff;
+  animation: sen9 6s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes sen9 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.sen1 {
+  border-bottom: none;
+}
+
+.sen2 {
+  border-right: none;
+  border-left: none;
+}
+
+.sen3 {
+  border-right: none;
+}
+
+.sen4 {
+  border-bottom: none;
+}
+
+.sen5 {
+  border-right: none;
+  border-left: none;
+}
+
+.sen6 {
+  border-top: none;
+}
+
+.sen7 {
+  border-right: none;
+}
+
+.sen8 {
+  border-left: none;
+}
+
+.sen9 {
+  border-top: none;
+}
+
+/* ーーーーーここまで線アニメセクターーーーー */
+
+/* ここからオブジェクトアニメ */
+
+.fade-in {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 3s; /* ←アニメ時間 */
+  animation-delay: 6s; /* ←アニメ待機時間 */
+  z-index: -830;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  } /* ←スタートは絵柄なし opacityの数字はは「0」＝なし「１」＝ありの二つだけ*/
+  100% {
+    opacity: 1;
+  } /* ←絵柄が100％あらわれる */
+}
+
+/* ここまでオブジェクトアニメ */
+
+/* ここからローディングアニメ */
+
+.circle {
+  background-color: rgba(255, 255, 255, 0.897);
+  border: 20px solid rgb(255, 255, 255);
+  opacity: 0.9;
+  border-right: 30px solid rgb(255, 255, 255);
+  border-left: 30px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  box-shadow: 0 0 100px #fffefe;
+  width: 50px;
+  height: 50px;
+
+  margin: 0 auto;
+  animation: spinPulse 2s infinite ease-in-out;
+  -webkit-animation: spinPulse 2s infinite linear;
+}
+
+.circle1 {
+  background-color: rgba(255, 255, 255, 0);
+  border: 15px solid rgba(255, 255, 255, 0.589);
+  opacity: 0.9;
+  border-left: 15px solid rgba(0, 0, 0, 0);
+  border-right: 15px solid rgba(0, 0, 0, 0);
+  border-radius: 280px;
+  box-shadow: 0 0 15px #ffffffe5;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+
+  position: relative;
+  top: -50px;
+  left: 50px;
+  animation: spinoffPulse 4s infinite linear;
+  -webkit-animation: spinoffPulse 4s infinite linear;
+}
+
+@-moz-keyframes spinPulse {
+  0% {
+    -moz-transform: rotate(160deg);
+    opacity: 0;
+    box-shadow: 1 0 1px #ffffff;
+  }
+
+  50% {
+    -moz-transform: rotate(145deg);
+    opacity: 1;
+  }
+
+  100% {
+    -moz-transform: rotate(-320deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes spinoffPulse {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinPulse {
+  0% {
+    -webkit-transform: rotate(160deg);
+    opacity: 0;
+    box-shadow: 0 0 1px #ffffff;
+  }
+
+  50% {
+    -webkit-transform: rotate(145deg);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotate(-320deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spinoffPulse {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* ここまでローディングアニメ */
+
+/* レスポンシブ */
+
+@media (max-width: 1515px) {
+  .sen2 {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media (max-width: 1061px) {
+  .circle1 {
+    width: 240px;
+    height: 240px;
+    top: -60px;
+    left: 145px;
+  }
+}
+
+@media (max-width: 991px) {
+  .circle1 {
+    left: 155px;
+  }
+
+  .containmer {
+    max-width: 991px;
+  }
+
+  .sen3::after {
+    margin-left: 200px;
+  }
+
+  .sen4::after {
+    margin-left: -100px;
+  }
+
+  @keyframes sen4 {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 200px;
+    }
+  }
+
+  .sen5::after {
+    width: 140px;
+  }
+
+  .sen6::after {
+    margin-top: -82px;
+    margin-left: -130px;
+    /* width: 140px; */
+  }
+
+  .sen7 {
+    border-right: none;
+  }
+
+  @keyframes sen7 {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 0px;
+    }
+  }
+
+  .sen8 {
+    border-left: none;
+  }
+
+  @keyframes sen8 {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 0px;
+    }
+  }
+}

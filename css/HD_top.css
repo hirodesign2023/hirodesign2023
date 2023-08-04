@@ -1,0 +1,65 @@
+@import url(HD_common.css);
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&family=Montserrat&family=Pacifico&display=swap");
+
+/* コンテンツ名透明化 */
+h4 {
+  visibility: hidden;
+}
+
+.maincon {
+  display: flex;
+  max-width: 1230px;
+  height: 730px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo:hover {
+  cursor: default;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+/* メインタイトル */
+.title {
+  max-width: 1230px;
+  font-size: 38px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: -100px;
+  margin-right: -40px;
+  cursor: default;
+}
+
+.sp {
+  display: none;
+}
+
+.title span {
+  color: #ffae00;
+}
+
+/* ここからメインタイトルアニメ */
+
+.fade-up {
+  opacity: 0;
+  animation-name: fade-up;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 3s; /* ←アニメ時間 */
+  animation-delay: 1.5s; /* ←アニメ待機時間 */
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px); /* ←スタートは40px下から絵柄ゼロ */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* ←40px上昇後には100％あらわれている */
+  }
+}
+
+/* ーーーーーーここまでメインタイトルアニメーーーーーー */

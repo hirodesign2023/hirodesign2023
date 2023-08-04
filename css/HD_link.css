@@ -1,0 +1,168 @@
+@import url(HD_common.css);
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&family=Montserrat&family=Pacifico&display=swap");
+
+/* ここからぷちオブジェクトアニメ */
+
+.open {
+  opacity: 0;
+  animation-name: open;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ここまでぷちオブジェクトアニメ */
+
+.maincon {
+  display: flex;
+  max-width: 1230px;
+  height: 730px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.link img {
+  background-image: url(../img/HDSP_common/link_ok.svg);
+  transform: scale(1.15);
+  transition: 0s;
+  cursor: default;
+}
+
+.congui {
+  max-width: 1000px;
+  height: 800px;
+  padding-bottom: 90px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  font-feature-settings: "palt";
+}
+
+.congui li p img {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  margin-bottom: 6px;
+  border-radius: 5px; /* ←角丸の設定 */
+  transition: all 1s;
+}
+
+.congui li p img:hover {
+  opacity: 0;
+  transform: scale(1.15);
+}
+
+.mcontents ul li {
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.linktext {
+  max-width: 880px;
+  font-size: 13px;
+  margin-left: 20px;
+  margin-right: 30px;
+  text-align: justify;
+  font-feature-settings: "palt";
+  cursor: default;
+}
+
+.honda:hover {
+  transition-timing-function: ease-in;
+  background-image: url(../img/HDSP_link/link_hrc02.svg);
+  background-repeat: no-repeat;
+  transform: scale(1.15);
+  transition: 1s;
+}
+
+.mazda:hover {
+  transition-timing-function: ease-in;
+  background-image: url(../img/HDSP_link/link_mazda02.svg);
+  background-repeat: no-repeat;
+  transform: scale(1.15);
+  transition: 1s;
+}
+
+.udon:hover {
+  transition-timing-function: ease-in;
+  background-image: url(../img/HDSP_link/link_udon02.svg);
+  background-repeat: no-repeat;
+  transform: scale(1.15);
+  transition: 1s;
+}
+
+.matsudo:hover {
+  transition-timing-function: ease-in;
+  background-image: url(../img/HDSP_link/link_matsudo02.svg);
+  background-repeat: no-repeat;
+  transform: scale(1.15);
+  transition: 1s;
+}
+
+.bokete:hover {
+  transition-timing-function: ease-in;
+  background-image: url(../img/HDSP_link/link_bokete02.svg);
+  background-repeat: no-repeat;
+  transform: scale(1.15);
+  transition: 1s;
+}
+
+.nikko:hover {
+  transition-timing-function: ease-in;
+  background-image: url(../img/HDSP_link/link_4go02.svg);
+  background-repeat: no-repeat;
+  transform: scale(1.15);
+  transition: 1s;
+}
+
+@media (min-width: 1260px) {
+  .links {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .congui {
+    max-width: 700px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .congui {
+    max-width: 600px;
+    padding-bottom: 110px;
+    margin-right: -15px;
+    font-size: 14px;
+  }
+
+  .congui li p:hover {
+    background-image: none !important;
+  }
+  .mcontents ul li {
+    margin-top: 45px;
+  }
+
+  .congui li p img {
+    width: 92%;
+  }
+
+  .linktext {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
